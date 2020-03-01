@@ -1,0 +1,43 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Berry">
+
+<listeners>
+
+<listener class-name="Run.App"></listener>
+
+</listeners>
+
+<test name="Apple">
+
+<parameter name="url" value="http://amazon.com"></parameter>
+
+<parameter name="browser" value="Chrome"></parameter>
+
+<classes>
+<!--<class name="POM.Home_page_test"></class>-->
+<class name="Run.Home_Page_Test"></class>
+<!-- <class name="POM.Forgot_Account_Test"></class>-->
+<!-- <class name="com.amazon.Functional.EmiratesCalendar"></class>-->
+</classes>
+</test>
+
+<test name="Peach">
+
+<parameter name="url" value="http://facebook.com"></parameter>
+
+<parameter name="browser" value="Firefox"></parameter>
+
+<classes>
+<!--<class name="POM.Home_page_test"></class>-->
+<class name="Run.Home_Page_Test"></class>
+
+<!-- <class name="POM.Forgot_Account_Test"></class>-->
+<!-- <class name="com.amazon.Functional.EmiratesCalendar"></class>-->
+</classes>
+</test>
+</suite>
+
+
+
+
